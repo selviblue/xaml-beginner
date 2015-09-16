@@ -1,0 +1,25 @@
+﻿<Page x:Class="RestaurantManager.ExpeditePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="ExpeditePage">
+    <Page.Resources>
+        
+    </Page.Resources>
+    <Grid>        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="collapseStack" Background="#FF9B58D3">
+            <Button Content="Home" Click="Home_Click" HorizontalAlignment="Left" Cursor="Hand" Background="{x:Null}"></Button>
+        </StackPanel>
+        <DataGrid x:Name="dgGrid" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Height="200" Width="300" AutoGenerateColumns="True" />
+        <Button Content="**Clear All Orders**" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" />        
+
+    </Grid>
+</Page>
